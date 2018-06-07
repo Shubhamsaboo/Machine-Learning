@@ -24,6 +24,9 @@ ggplot(df, aes(x = factor(purpose))) + geom_bar(aes(fill= not.fully.paid), posit
 #Scatterplot of fico score versus int.rate
 ggplot(df, aes(x = int.rate, y = fico)) + geom_point(aes(color = not.fully.paid)) + theme_bw()
 
+##Scatterplot of fico score versus int.rate
+ggplot(df, aes(x = int.rate, y = fico)) + geom_point(aes(color = not.fully.paid)) + theme_bw()
+
 #Splitting the Data
 library(caTools)
 sample <- sample.split(df, SplitRatio = 0.7)
