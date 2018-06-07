@@ -1,6 +1,8 @@
 #Reading Data
 df <- read.csv('loan_data.csv')
-
+a = CRAM
+print(a)
+print(class(a))
 #Converting to factors
 df$inq.last.6mths <- factor(df$inq.last.6mths)
 df$delinq.2yrs <- factor(df$delinq.2yrs)
