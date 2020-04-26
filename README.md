@@ -1,2 +1,2 @@
 # Machine-Learning
-In this repository we implement different machine learning algorithms to solve various real world problems.
+In this repository I have implemented several machine learning algorithms to solve various real world problems.
