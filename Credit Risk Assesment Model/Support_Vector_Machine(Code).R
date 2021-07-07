@@ -1,6 +1,8 @@
 #Reading Data
 df <- read.csv('loan_data.csv')
-
+a = CRAM
+print(a)
+print(class(a))
 #Converting to factors
 df$inq.last.6mths <- factor(df$inq.last.6mths)
 df$delinq.2yrs <- factor(df$delinq.2yrs)
@@ -22,6 +24,9 @@ ggplot(df, aes(x = fico)) + geom_histogram(aes(fill= not.fully.paid), color='bla
 ggplot(df, aes(x = factor(purpose))) + geom_bar(aes(fill= not.fully.paid), position = "dodge") + theme_bw() + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 #Scatterplot of fico score versus int.rate
+ggplot(df, aes(x = int.rate, y = fico)) + geom_point(aes(color = not.fully.paid)) + theme_bw()
+
+##Scatterplot of fico score versus int.rate
 ggplot(df, aes(x = int.rate, y = fico)) + geom_point(aes(color = not.fully.paid)) + theme_bw()
 
 #Splitting the Data
